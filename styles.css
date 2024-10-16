@@ -1,0 +1,19 @@
+table {
+    /*width: 50%; */
+ }
+ 
+ table,
+ th,
+ td {
+   border: 1px solid black;
+   text-align: center;
+ }
+ 
+ input {
+   display: block;
+ }
+ 
+ section {
+   border: 1px solid black;
+   margin-top: 10px;
+ }

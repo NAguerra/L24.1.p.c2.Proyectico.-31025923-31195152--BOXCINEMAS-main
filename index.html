@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOXCINEMAS</title>
+    <link rel="stylesheet" href="styles.css" />   
+</head>
+<div id="salida"></div>
+<body>
+    
+    <section id="mainform">
+        <h3>BoxCinemas</h3>
+        <table id = "mainform_table">
+            <input type = "text" id="mainform_ininicialCaja" placeholder="Inicial de caja"/></input>
+            <button id="mainform_btAceptar">Aceptar</button>
+            <tr>
+                <th>Familia</th>
+                <th>Cantidad de personas</th>
+                <th>Día</th>
+                <th>Total a pagar</th>
+            </tr>
+        </table>
+    
+        <h5>Familia con mayor pago: <span id="mainform_lblFamilia">?</span></h5>
+        <h5>Promedio pagado el lunes: $<span id="mainform_lblPromedio">?</span></h5>
+        <h5>Total de la jornada: $<span id="mainform_lblTotal">?</h5>
+        <button id="mainform_btAgregar">Agregar</button>
+    </section>
+
+    <section id="familyform">
+<input type="text" id = "familyform_familia" placeholder="Nombre de la familia"></input>
+<input type="text" id = "familyform_personas" placeholder="Cantidad de personas"></input>
+<input type="text" id = "familyform_dia" placeholder="Dia"></input>
+<button id="familyform_btAceptar">Aceptar</button>
+    </section>
+
+</body>
+    <script type="module">
+        import CL_Controlador from "./js/CL_Controlador.js";
+        new CL_Controlador();
+    </script>
+</html>
